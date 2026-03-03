@@ -1,0 +1,4 @@
+[submodule "wdmdm"]
+	path = wdmdm
+	url = https://github.com/davide-beltrame/Why-Diffusion-Models-Don-t-Memorize.git
+	branch = celeba-biased-generalization

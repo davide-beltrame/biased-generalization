@@ -1,0 +1,42 @@
+# Unified conda environment for biased-generalization (controlled setting experiments) and wdmdm (CelebA experiments).
+# GPU variant — requires a CUDA-capable driver on the host (CUDA toolkit provided by pytorch).
+#
+# Create:  conda env create -f environment_gpu.yml
+# Update:  conda env update -f environment_gpu.yml --prune
+name: gpu_env_dl
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+
+  # PyTorch (CUDA 12.1 — matches HPC modules cuda/12.1+)
+  - pytorch::pytorch>=2.1
+  - pytorch::torchvision>=0.16
+  - pytorch::pytorch-cuda=12.1
+
+  # scientific computing
+  - numpy>=1.24
+  - scipy>=1.10
+  - numba>=0.58
+
+  # plotting
+  - matplotlib>=3.7
+
+  # image processing
+  - pillow>=9.0
+
+  # utilities
+  - tqdm>=4.65
+  - natsort>=8.0
+
+  # dev / testing
+  - pytest>=7.0
+
+  # pip-only packages
+  - pip
+  - pip:
+    - wandb
+    - seaborn

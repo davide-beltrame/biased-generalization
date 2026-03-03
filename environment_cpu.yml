@@ -1,0 +1,41 @@
+# Unified conda environment for biased-generalization (controlled setting experiments) and wdmdm (CelebA experiments).
+# CPU-only variant — for local development, plotting, lightweight testing.
+#
+# Create:  conda env create -f environment_cpu.yml
+# Update:  conda env update -f environment_cpu.yml --prune
+name: gpu_env_dl
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+
+  # PyTorch (CPU only)
+  - pytorch::pytorch>=2.1
+  - pytorch::torchvision>=0.16
+  - pytorch::cpuonly
+
+  # scientific computing
+  - numpy>=1.24
+  - scipy>=1.10
+  - numba>=0.58
+
+  # plotting
+  - matplotlib>=3.7
+
+  # image processing
+  - pillow>=9.0
+
+  # utilities
+  - tqdm>=4.65
+  - natsort>=8.0
+
+  # dev / testing
+  - pytest>=7.0
+
+  # pip-only packages
+  - pip
+  - pip:
+    - wandb
+    - seaborn

@@ -1,0 +1,16 @@
+# PyTorch is recommended to be installed first or with specific CUDA flags depending on the HPC
+torch
+torchvision
+
+# Scientific Computing
+numpy
+scipy
+numba
+
+# Visualization
+matplotlib
+seaborn
+
+# Utilities
+wandb
+tqdm
