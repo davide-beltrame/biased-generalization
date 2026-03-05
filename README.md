@@ -1,6 +1,6 @@
 # Biased Generalization in Diffusion Models
 
-Code for the numerical experiments in the paper [Biased Generalization in Diffusion Models](https://arxiv.org/abs/2602.-----) by J. Garnier-Brun, L. Biggio, D. Beltrame, M. Mézard, and L. Saglietti.
+Code for the numerical experiments in the paper [Biased Generalization in Diffusion Models](https://arxiv.org/abs/2603.03469) by J. Garnier-Brun, L. Biggio, D. Beltrame, M. Mézard, and L. Saglietti.
 
 Hierarchical-data (controlled setting) experiments live in `scripts/` (experiment files) and `modules/` (core logic).
 
@@ -106,5 +106,11 @@ checkpoint trees; see each script's docstring for the exact flags.
 ## Citation
 
 ```bibtex
-#TODO
+@article{GarnierBrun2026BiasedGeneralization,
+  title   = {Biased Generalization in Diffusion Models},
+  author  = {Garnier-Brun, Jerome and Biggio, Luca and Beltrame, Davide and M{\'e}zard, Marc and Saglietti, Luca},
+  journal = {arXiv preprint arXiv:2603.03469},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2603.03469}
+}
 ```
